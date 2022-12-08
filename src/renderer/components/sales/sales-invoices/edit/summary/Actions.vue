@@ -1,0 +1,52 @@
+<template>
+  <el-container>
+    <div class="mt-2 action-buttons-nonGrown horizontal-center">
+      <NuxtLink :to="localePath('/sales/sales-invoices')">
+        <el-button size="mini" class="btn-blue">
+          {{$t('save-f5')}}
+        </el-button>
+      </NuxtLink>
+      <NuxtLink :to="localePath('/reports-and-statements/public-statements/sales-invoices-statements')" >
+        <el-button size="mini" class="btn-violet-faded">{{$t('search-f7')}}</el-button>
+      </NuxtLink>
+      <el-button size="mini" class="btn-red">{{$t('delete-f8')}}</el-button>
+      <NuxtLink :to="localePath('/sales/sales-invoices')" >
+        <el-button size="mini" class="btn-violet">
+          {{$t('back-f6')}}
+        </el-button>
+      </NuxtLink>
+      <el-button size="mini" class="btn-cyan">{{$t('suspend-invoice-f9')}}</el-button>
+      <el-button size="mini"  class="btn-grey" @click="openPrintOptionsDialog()">{{$t('print-pdf')}}</el-button>
+      <el-button size="mini"  class="btn-grey">{{$t('print-f4')}}</el-button>
+      <el-button size="mini"  class="btn-grey">{{$t('print-cashier')}}</el-button>
+    </div>
+
+    <!-- print dialog -->
+    <print-options />
+  </el-container>
+</template>
+
+<script>
+import PrintOptions from '~/components/dialogs/print-options';
+
+import open_dialogs from '~/components/sales/open_dialogs.js'
+
+export default {
+  name: "Actions",
+
+  mixins: [open_dialogs ],
+
+  components: {
+    PrintOptions
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+.horizontal-center {
+  align-items: center;
+}
+.label {
+  color: #6dd1cf;
+}
+</style>

@@ -1,0 +1,77 @@
+.el-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  [dir="rtl"] & {
+    direction: ltr;
+
+    .btn-next .el-icon, .btn-prev .el-icon {
+      transform: none !important;
+    }
+  }
+
+  .btn-prev,
+  .btn-next {
+    background-color: #21798d !important;
+    color: #fff !important;
+    border-radius: 15px !important;
+
+    i {
+      font-size: 20px !important;
+    }
+  }
+
+  .el-pager {
+    
+
+    .number {
+      color: #707070 !important;
+      margin: 0 1px !important;
+    }
+
+    .number.active {
+      background: transparent !important;
+      color: #21798d !important;
+      font-size: 26px;
+    }
+  }
+}
+
+.el-pagination__total {
+  margin-right: 15px;
+  margin-left: 7px;
+}
+
+.el-pagination .el-select .el-input .el-input__inner {
+  padding-right: 7px;
+}
+
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .el-pager li {
+  background: transparent;
+}
+
+.el-pagination .btn-next .el-icon,
+.el-pagination .btn-prev .el-icon {
+  transform: rotate(180deg);
+}
+
+.pagination-navigate-to {
+  width: 30%;
+  margin-left: 10px;
+  margin-right: 10px;
+  input {
+    border: 1px solid #21798d;
+    border-radius: 20px;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}

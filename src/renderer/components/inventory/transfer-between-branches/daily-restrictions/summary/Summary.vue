@@ -1,0 +1,20 @@
+<template>
+  <div class="container ma-4 mx-8 py-2 mt-0 invoice-summary">
+   <notes />
+   <actions />
+  </div>
+</template>
+
+
+<script>
+import Notes from './Notes';
+import Actions from './Actions';
+
+export default {
+  name: 'summary-section',
+  components: { 
+    Notes,
+    Actions,
+  }
+}
+</script>

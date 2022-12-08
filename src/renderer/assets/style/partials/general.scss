@@ -1,0 +1,1100 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script&display=swap");
+body {
+    margin: 0;
+    background-color: #fafafa;
+    resize: both;
+}
+
+body,
+input,
+button {
+    font-family: "Abel", sans-serif;
+}
+
+.border-none {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.min-width-0 {
+    min-width: 0;
+}
+
+.text-blue {
+    span {
+        color: #21798d;
+    }
+}
+
+a .el-button {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.horizontal-line-text {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #21798d;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.horizontal-line-text span {
+    background: #fff;
+    padding: 0 10px;
+    color: #21798d;
+}
+
+.width-full {
+    width: 100% !important;
+}
+
+.height-full {
+    height: 100% !important;
+}
+
+.width-full-sm {
+    @media (max-width: 426px) {
+        width: 100%;
+    }
+}
+
+.min-height-100 {
+    min-height: 100px !important;
+}
+
+.bell-icon {
+    color: #000 !important;
+    font-size: 25px !important;
+    font-weight: 800;
+}
+
+button {
+    cursor: pointer;
+}
+
+.border-radius-20 {
+    border-radius: 20px;
+}
+
+.action-buttons-right {
+    float: left;
+}
+
+.action-buttons-left {
+    float: right;
+    .el-button {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+}
+
+.demo-input-label {
+    display: inline-block;
+    width: 130px;
+}
+
+.text-center {
+    text-align: center !important;
+    >input {
+        text-align: center !important;
+    }
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-large label {
+    font-size: large;
+}
+
+.language {
+    margin: 0px 20px;
+    color: #909399;
+    text-decoration: none;
+}
+
+.language:hover {
+    color: #000;
+}
+
+.numberAppend {
+    padding-bottom: 10px;
+    padding-right: 12px;
+    padding-top: 11px;
+    padding-left: 12px;
+    background-color: #feffdc;
+    color: rgba(0, 0, 0, 0.438);
+    border: 1px solid rgba(173, 173, 173, 0.534);
+}
+
+.display-none {
+    display: none !important;
+}
+
+.invoice-inventory-first-term-label {
+    @media (min-width: 425px) {
+        margin: 1rem;
+    }
+    .el-input {
+        width: auto;
+        margin-top: 11px;
+        .el-input__inner {
+            border-radius: 20px;
+            text-align: center;
+        }
+    }
+}
+
+.invoice-account-card-form .el-button {
+    [dir="rtl"] & {
+        @media (min-width: 1000px) {
+            margin-right: 1rem;
+        }
+    }
+    [dir="ltr"] & {
+        @media (min-width: 1000px) {
+            margin-left: 1rem;
+        }
+    }
+}
+
+.arround-checkbox .el-checkbox__inner {
+    border-radius: 100%;
+    // margin: 1rem;
+}
+
+.padding-label .el-checkbox__input {
+    padding: 10px;
+}
+
+.input-padding {
+    input {
+        text-align: center;
+    }
+    padding-left: 15px;
+    padding-right: 0;
+    [dir="rtl"] & {
+        padding-right: 15px;
+        padding-left: 0;
+    }
+    // @media only screen and (max-width: 768px) {
+    //   padding-left: 10px;
+    //   padding-right: 0;
+    //   [dir='rtl'] & {
+    //     padding-right: 10px;
+    //     padding-left: 0;
+    //   }
+    // }
+}
+
+.border-light {
+    border: 1px solid #eee;
+}
+
+.placeHolderColor .el-input--suffix .el-input__inner {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.placeHolderDialog .el-input--suffix .el-input__inner {
+    text-align: center !important;
+}
+
+.placeHolderDialog .el-input__inner::placeholder {
+    text-align: center !important;
+}
+
+.placeHolderDialog .el-input__inner {
+    text-align: center !important;
+}
+
+.placeHolderColor {
+    .el-input__inner {
+        color: #fff !important;
+    }
+    input {
+        font-weight: 900;
+    }
+    .el-select__caret {
+        color: #fff !important;
+    }
+}
+
+.el-select-dropdown {
+    a {
+        text-decoration: none;
+    }
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.selectButton {
+    padding: 0 !important;
+    border: 1px solid rgba(238, 238, 238, 0.377);
+    button {
+        text-align: start;
+    }
+}
+
+.addSelect {
+    padding: 0 !important;
+    button {
+        text-align: unset;
+    }
+    span {
+        color: #f00;
+    }
+}
+
+.d-block {
+    display: block !important;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.visibility-collapse {
+    visibility: collapse;
+}
+
+// accounting tree
+.label-checkbox-padding .el-tree-node__label {
+    padding: 10px;
+}
+
+.el-tree {
+    .el-checkbox {
+        span {
+            margin: 0 5px;
+        }
+    }
+    .el-icon-plus {
+        background-color: #00bf13;
+        border-radius: 50%;
+        color: #fff;
+        padding: 2px;
+    }
+    .is-leaf {
+        color: transparent;
+        cursor: default;
+        background-color: transparent;
+    }
+}
+
+.el-tree-node__content {
+    margin-bottom: 10px;
+    [dir="rtl"] & {
+        padding-right: 0px;
+        +.el-tree-node__children {
+            .el-tree-node__content {
+                padding-right: 18px;
+                +.el-tree-node__children {
+                    .el-tree-node__content {
+                        padding-right: 36px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.checkbox-checked {
+    .el-checkbox__inner {
+        border-radius: 50%;
+    }
+    .el-checkbox__label {
+        padding: 10px;
+    }
+}
+
+.notes-summary textarea {
+    float: right;
+    max-width: 300px;
+    margin-right: 1px;
+    margin-left: 1px;
+    @media only screen and (min-width: 768px) {
+        margin-right: 20px;
+    }
+}
+
+.border-bottom-transparent {
+    border-bottom-color: transparent;
+}
+
+// .el-input__inner {
+//   padding: 0 5px !important;
+// }
+.container.invoice-table.unactivatedTable {
+    .el-table__header-wrapper th {
+        background-color: #21798d62 !important;
+    }
+    .el-input {
+        cursor: not-allowed;
+    }
+    .el-input__inner {
+        pointer-events: none;
+    }
+}
+
+.Selectshow.invoice-table.unactivatedTable {
+    .popup-label {
+        background-color: #21798d62 !important;
+    }
+    .el-input {
+        cursor: not-allowed;
+    }
+    .el-input__inner {
+        pointer-events: none;
+    }
+}
+
+.summaryTables {
+    border-radius: 1pc;
+    -webkit-border-radius: 1pc;
+    -moz-border-radius: 1pc;
+    -ms-border-radius: 1pc;
+    -o-border-radius: 1pc;
+    .el-table__header-wrapper th {
+        background-color: #f0f7ff !important;
+        color: #21798d;
+        text-align: center;
+    }
+    .el-table__header-wrapper tbody .el-table__row td {
+        text-align: center;
+    }
+}
+
+.visible-table .el-table__header-wrapper {
+    display: block !important;
+}
+
+.placeHolderColor .el-input__inner::placeholder {
+    color: #ffffff !important;
+}
+
+.append-label .el-input-group__prepend {
+    width: 45%;
+    background-color: #fbffbf;
+    border: 1px solid #dcdfe6 !important;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.append-label .el-input__inner {
+    text-align: center;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.summaryTable .el-table__row {
+    background-color: #feffdc;
+}
+
+.is-scrolling-middle .el-table__append-wrapper {
+    width: fit-content !important;
+}
+
+.is-scrolling-right .el-table__append-wrapper {
+    width: fit-content !important;
+}
+
+.is-scrolling-left .el-table__append-wrapper {
+    width: fit-content !important;
+}
+
+.el-table__append-wrapper {
+    width: 100% !important;
+    div {
+        border-radius: 0 !important;
+    }
+    &:last-child {
+        border-radius: 0 0 1rem 1rem !important;
+    }
+}
+
+.amount-append {
+    margin-left: -6px;
+    [dir="rtl"] & {
+        margin-right: -6px;
+    }
+}
+
+.addItemTable .el-table__body-wrapper.is-scrolling-left::-webkit-scrollbar {
+    display: none;
+}
+
+.inner-search {
+    margin-bottom: 0px;
+    color: #21798d;
+}
+
+.information-summary {
+    padding: 10px;
+    // margin-right: 2rem;
+    background-color: #f7fafa;
+    // border-bottom-left-radius: 0.5rem;
+    // border-bottom-right-radius: 0.5rem;
+    // box-shadow: 0 0.2rem 0.5rem #dddddd;
+    color: rgb(129, 129, 129);
+}
+
+.el-date-editor.el-input {
+    width: auto;
+}
+
+.el-input__inner::placeholder {
+    color: #333 !important;
+    overflow: visible;
+}
+
+.el-menu--collapse {
+    position: relative;
+}
+
+@media only screen and (max-width: 426px) {
+    .mobile-width-full {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .el-table__body,
+    .el-table__footer,
+    .el-table__header {
+        width: 100% !important;
+    }
+}
+
+.el-menu--horizontal>.el-submenu {
+    float: right !important;
+}
+
+.el-form .el-input {
+    .el-input-group__append {
+        background-color: #fff;
+    }
+}
+
+.text-unbold {
+    font-weight: 300;
+    width: 100%;
+}
+
+.cost-centers-nested-dialog {
+    margin: auto;
+    label {
+        padding: 0 10px !important;
+        color: red;
+        border: 1px solid #ddd;
+        margin-bottom: 3px;
+    }
+}
+
+.border-radius-top {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.inventory-increase-table .el-table__header-wrapper {
+    display: none;
+}
+
+.inventory-increase-form {
+    background-color: #21798d;
+    border-radius: 15px 15px 0 0;
+}
+
+.table-append-tax {
+    .popup-label {
+        width: 20%;
+    }
+    @media only screen and (max-width: 769px) {
+        overflow-x: auto;
+        table {
+            width: 220% !important;
+        }
+        .popup-label {
+            width: 20%;
+        }
+    }
+}
+
+.inner-table .el-table__header-wrapper th {
+    color: rgb(255, 255, 255) !important;
+    background-color: #21798d !important;
+}
+
+.invoice-msg {
+    text-align: center;
+    margin-top: 25px;
+    padding: 5px 250px;
+    background-color: #fffbd4;
+    border: 1px solid rgb(190, 189, 189);
+    border-radius: 5%;
+}
+
+@media only screen and (min-width: 900px) {
+    .mr-5 {
+        margin-right: 0.2rem;
+    }
+    .max-width75 {
+        max-width: 75px;
+    }
+    .max-width80 {
+        max-width: 80px;
+    }
+    .max-width90 {
+        max-width: 90px;
+    }
+    .max-width120 {
+        max-width: 120px;
+    }
+}
+
+.el-menu-app-bar {
+    padding: 1em;
+    li.el-menu-item,
+    li.el-menu-item.is-active {
+        border-bottom: 0;
+        i {
+            font-size: 2rem;
+        }
+        img {
+            height: 65%;
+            border-radius: 5px;
+            box-shadow: 0 0 0.4rem #dddddd;
+        }
+    }
+}
+
+.min-height-250 {
+    min-height: 250px;
+}
+
+.bg-offWhite .el-input__inner {
+    background-color: #ffffd8 !important;
+}
+
+.box-shadow {
+    box-shadow: 0px 3px 18px -6px rgba(0, 0, 0, 0.6);
+}
+
+.el-button--mini,
+.el-button--mini.is-round {
+    padding: 7px 10px;
+}
+
+.information-summary .el-input-group__append {
+    padding: 10px !important;
+}
+
+.search-btn {
+    background-color: #21798d;
+    color: #fff;
+    padding: 8px 4px;
+    border-radius: 15%;
+    margin-right: 3px;
+}
+
+.input-label {
+    padding: 8px 16px;
+    background-color: #21798d;
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.popup-page {
+    width: 70%;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    // box-shadow: 0px 10px 35px -10px rgba(0,0,0,0.75);
+    @media only screen and (max-width: 375px) {
+        width: 100%;
+    }
+}
+
+.popup-label {
+    background-color: #21798d;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    margin: 0 20px;
+    padding: 0 4px;
+    width: 40%;
+    font-size: large;
+    span {
+        font-size: large;
+    }
+}
+
+.popup-label-width {
+    background-color: #21798d;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    margin: 0 20px;
+    padding: 0 4px;
+    font-size: large;
+    span {
+        font-size: large;
+    }
+}
+
+.popup-label-text {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    color: #21798d;
+    margin: 0 20px;
+    padding: 0.6pc;
+    font-size: large;
+    span {
+        font-size: large;
+    }
+}
+
+.popup-label-text-special {
+    background: transparent;
+    display: inline;
+    justify-content: flex-start;
+    direction: ltr;
+    border-radius: 5px;
+    color: #21798d;
+    margin: 0 20px;
+    padding: 0.6pc;
+    font-size: large;
+    span {
+        font-size: large;
+    }
+}
+
+.totals-form {
+    &.width-half {
+        @media (min-width: 768px) {
+            width: 50%;
+        }
+    }
+}
+
+.el-form-item {
+    margin-bottom: 0px !important;
+}
+
+.border-radius {
+    border-radius: 15px !important;
+}
+
+.border-radius input {
+    border-radius: 15px;
+}
+
+.el-input--prefix .el-input__prefix {
+    right: 5px;
+    left: auto;
+}
+
+.el-button {
+    white-space: normal;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.doubleButtons>div:first-of-type {
+    [dir="rtl"] & {
+        margin-right: 0 !important;
+        margin-left: 1.5rem;
+    }
+    @media only screen and (max-width: 426px) {
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+}
+
+.doubleButtons {
+    justify-content: center;
+    .el-form-item {
+        flex-grow: 0 !important;
+    }
+    @media only screen and (max-width: 426px) {
+        button {
+            width: 100%;
+        }
+        .el-form-item {
+            width: 100%;
+        }
+    }
+}
+
+.el-menu--horizontal>.el-menu-item {
+    font-weight: bold;
+    [dir="rtl"] & {
+        float: right;
+    }
+}
+
+.el-menu--collapse .el-submenu {
+    i {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .el-submenu__title span,
+    .el-submenu__icon-arrow {
+        display: none;
+    }
+}
+
+.primary-navbar span li {
+    display: inline-block;
+}
+
+.el-submenu.is-active {
+    .el-submenu__title {
+        i:first-of-type {
+            color: #409eff;
+        }
+        span {
+            color: #409eff;
+        }
+    }
+}
+
+.el-menu--horizontal>.el-menu-item.is-active {
+    background-color: #ffffff;
+    border-bottom: 2px solid #1baeab;
+    &:hover,
+    &:focus {
+        color: #1baeab;
+    }
+}
+
+.select-box .el-checkbox__input {
+    margin: 0 10px;
+}
+
+// .el-checkbox:last-of-type {
+//     margin-right: 30px;
+// }
+.el-checkbox.inner-checkbox {
+    margin-top: 25px;
+    margin-left: 10px;
+    .el-checkbox__label {
+        span {
+            white-space: normal;
+        }
+    }
+}
+
+.vertical-buttons {
+    margin-top: 25px;
+    @media only screen and (max-width: 426px) {
+        width: 100%;
+    }
+    div {
+        width: 100%;
+        margin-top: 0.4rem;
+        button {
+            width: 100%;
+        }
+    }
+}
+
+.deduction-bond {
+    background-color: #97dada;
+    height: 600px;
+}
+
+.bl-radius>.el-input__inner {
+    border-radius: 20px 20px 20px 20px;
+}
+
+.bl-none .el-input-group__append {
+    background: #fff;
+    // padding:10px;
+    color: #21798d;
+}
+
+.text-color .el-input__inner::placeholder {
+    color: #21798d !important;
+}
+
+.text-color .el-input__inner {
+    color: #21798d;
+}
+
+.form-page-color {
+    background-color: #97dada;
+}
+
+.label-card-account {
+    display: block;
+    background-color: #21798d;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    >div {
+        padding-bottom: 5px;
+        border-bottom: 0.5px solid #ddd;
+    }
+}
+
+// accounting
+.input-style-radius {
+    width: 600px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.label-input-right {
+    float: right;
+}
+
+.branches-card {
+    background-color: #fff;
+    border: 1px solid #707070;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.search-color .el-input-group__append {
+    background-color: #97dada;
+    color: #fff;
+    font-weight: bold;
+}
+
+.persentage-color .el-input-group__append {
+    background-color: #21798d;
+    color: #fff;
+    font-weight: bold;
+}
+
+.table-popup-color .el-table__header-wrapper th {
+    color: #000;
+    background-color: #10363f;
+    font-weight: 500;
+}
+
+.background-form {
+    background-image: linear-gradient(#97dada, #fff);
+}
+
+.summary {
+    background-color: rgba(240, 251, 253, 1);
+    border-style: none solid solid solid;
+    border-width: 2px;
+    border-color: #ddd;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0 8px 6px -6px #ddd;
+}
+
+.padding-select {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.input-style {
+    background-color: #fff;
+    border: 1px solid #dcdfe6;
+}
+
+.select-style {
+    width: 8pc;
+    background-color: #fff;
+    border: 1px solid #dcdfe6;
+}
+
+.time-display {
+    height: 38px;
+    border: 1px solid #dcdfe6;
+    border-right: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    color: #606266;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .spacer {
+        width: 0.5rem;
+    }
+}
+
+.date-time {
+    display: flex;
+    .el-input__inner {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+.placeholderText {
+    .el-input__inner {
+        color: #21798d;
+    }
+    .el-select__caret {
+        color: #21798d !important;
+    }
+}
+
+.popup-label1 {
+    background-color: #21798d;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    margin: 0 20px;
+    padding: 0 4px;
+    width: 25%;
+    font-size: large;
+    span {
+        font-size: large;
+    }
+}
+
+.popup-label3 {
+    background-color: #21798d;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    margin: 0 20px;
+    padding: 0.7pc;
+    font-size: large;
+    span {
+        font-size: large;
+    }
+}
+
+.searchRaduis {
+    .el-input__inner {
+        border-radius: 0.9pc;
+    }
+}
+
+.iframe {
+    width: 100%;
+    height: 11pc;
+}
+
+.popup-label2 {
+    background-color: #21798d;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0.7pc;
+    text-align: center;
+    margin: 0 20px;
+    position: relative;
+    left: 0.5pc;
+    font-size: large;
+    span {
+        font-size: large;
+    }
+    @media only screen and (min-width: 1200px) {
+        .el-col-lg-5 {
+            width: 22.53333%;
+        }
+    }
+    @media only screen and (min-width: 992px) {
+        .el-col-md-8 {
+            width: 32.33333%;
+        }
+    }
+    @media only screen and (min-width: 768px) {
+        .el-col-sm-9 {
+            width: 38%;
+        }
+    }
+}
+
+.table-width {
+    .popup-label {
+        width: 35%;
+    }
+}
+
+.popup-label-table {
+    background-color: #21798d;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    margin: 0 20px;
+    padding: 0 4px;
+    width: 35%;
+    font-size: large;
+    span {
+        font-size: large;
+    }
+}
+
+.checked {
+    display: flex;
+    padding: 1.5pc;
+}
+
+.popup-label-mobiel {
+    background-color: #21798d;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    margin: 0 20px;
+    padding: 0.5pc;
+    width: 40%;
+    margin-right: 1pc;
+    font-size: large;
+    span {
+        font-size: large;
+    }
+}
+
+.yellow-input {
+    .el-input__inner {
+        background-color: #feffdc;
+    }
+}
+
+.h-40 {
+    height: 1.8rem;
+}
+
+//  style disabled selectbox and input
+.el-input.is-disabled .el-input__inner,
+.el-textarea.is-disabled .el-textarea__inner {
+    background-color: #fff;
+    border-color: #dcdfe6;
+    color: #606266;
+}
+
+.confirmBox .el-message-box__btns button:nth-child(2) {
+    margin-inline-start: 10px !important;
+}
+
+.caret-transparent {
+    input {
+        caret-color: transparent;
+    }
+}
+
+.hover {
+    background-color: #21798d !important;
+    color: #fff;
+}

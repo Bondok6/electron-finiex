@@ -1,0 +1,5 @@
+.el-form-item.is-required.is-success:not(.is-no-asterisk)>.el-form-item__label:before {
+    content: "";
+    color: transparent;
+    margin-right: 0;
+}

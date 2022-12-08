@@ -1,0 +1,206 @@
+<template>
+  <el-container class="container ma-4 mt-0 mb-0 invoice-table none-hover">
+    <el-table
+      style="width: 100%"
+      stripe
+      border
+      max-height="750"
+      ref="table"
+      :data="tempList"
+      class="table"
+      row-class-name="rows"
+      row-key="id"
+      :cell-style="cellStyle"
+    >
+      <el-table-column align="center" prop="details" :label="$t('statement')">
+        <template slot-scope="scope">
+          {{
+            scope.row.isHeader
+              ? "---- " + scope.row.details + " ----"
+              : scope.row.details
+          }}
+        </template>
+      </el-table-column>
+      <el-table-column
+        align="center"
+        prop="debit"
+        :label="$t('total-receipts')"
+      >
+        <template slot-scope="scope">
+          {{ isHeader(scope.row, scope.row.debit) }}
+        </template>
+      </el-table-column>
+
+      <el-table-column
+        align="center"
+        prop="credit"
+        :label="$t('total-payments')"
+      >
+        <template slot-scope="scope">
+          {{ isHeader(scope.row, scope.row.credit) }}
+        </template>
+      </el-table-column>
+
+      <el-table-column
+        align="center"
+        prop="docNumber"
+        :label="$t('document-number')"
+      >
+        <template slot-scope="scope">
+          {{ scope.row.isHeader ? "---- " : scope.row.docNumber }}
+        </template>
+      </el-table-column>
+    </el-table>
+  </el-container>
+</template>
+
+<script>
+import { mapState, mapMutations } from "vuex";
+const maxRow = 30;
+export default {
+  name: "invoice-table",
+  data: function() {
+    return {
+      tempList: [],
+      rowHeight: 0,
+      start: 0,
+      names: [],
+      widths: [],
+      scrolling: false
+    };
+  },
+  computed: {
+    end() {
+      return this.start + maxRow + 1;
+    },
+    ...mapState({
+      tableData: state => {
+        if (state.Accounting.fundsAndBanksMovement.records?.length) {
+          return state.Accounting.fundsAndBanksMovement.records;
+        } else {
+          return [];
+        }
+      }
+    })
+  },
+  methods: {
+    handleResize() {
+      this.$nextTick(() => {
+        this.names = [];
+        this.widths = [];
+        for (const item of document.querySelectorAll(
+          ".el-table__body colgroup col"
+        )) {
+          this.names.push(item.getAttribute("name"));
+          this.widths.push(item.getAttribute("width"));
+        }
+        this.setWidth();
+        this.setRows();
+      });
+    },
+    // set columns widths
+    setWidth() {
+      for (const [index, width] of this.widths.entries()) {
+        for (const item of document.querySelectorAll("." + this.names[index])) {
+          item.style.width = `${width}px`;
+        }
+      }
+    },
+    setRows() {
+      for (const [index] of this.tempList.entries()) {
+        const rows = document.querySelectorAll(".rows");
+        rows[index].style.top = `${(index + this.start) * this.rowHeight}px`;
+        rows[index].style.height = `${this.rowHeight}px`;
+        rows[index].children.forEach(item => {
+          item.style.height = `${this.rowHeight}px`;
+        });
+      }
+    },
+    handleScroll(el) {
+      const start = ~~(el.target.scrollTop / this.rowHeight);
+      if (start === this.start) return;
+
+      this.start = start;
+      this.scrolling = true;
+
+      this.tempList = this.tableData.slice(this.start, this.end);
+
+      this.$nextTick(() => {
+        this.setWidth();
+        this.setRows();
+      });
+    },
+    cellStyle(row) {
+      if (row.row.isHeader) {
+        return {
+          "background-color": "#6dd1cf",
+          color: "#fff"
+        };
+      } else {
+        return;
+      }
+    },
+    isHeader(row, prop) {
+      if (row.isHeader) {
+        return "----";
+      } else {
+        return this.$numberWithCommas(prop);
+      }
+    }
+  },
+  watch: {
+    tableData: {
+      handler(newVal) {
+        this.tableWrapper.scrollTo(0, 0);
+
+        this.tempList = newVal.slice(this.start, this.end);
+        this.$nextTick(() => {
+          this.rowHeight = 35;
+          document.querySelector("tbody").style.height = `${this.rowHeight *
+            newVal.length}px`;
+
+          let heigthTableWrapper =
+            this.rowHeight * (newVal.length > maxRow ? maxRow : newVal.length);
+
+          this.tableWrapper.style.height = `${heigthTableWrapper}px`;
+        });
+        this.handleResize();
+      },
+      deep: true
+    }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.tableWrapper = document.querySelector(".el-table__body-wrapper");
+      this.tableWrapper.addEventListener("scroll", this.handleScroll, false);
+    });
+    window.addEventListener("resize", this.handleResize, false);
+  },
+  beforeDestroy() {
+    this.$nextTick(() => {
+      window.removeEventListener("resize", this.handleResize, false);
+      if (this.tableWrapper != undefined) {
+        this.tableWrapper.removeEventListener(
+          "scroll",
+          this.handleScroll,
+          false
+        );
+      }
+    });
+  }
+};
+</script>
+<style lang="scss">
+.table {
+  width: 100%;
+  .rows {
+    position: absolute;
+  }
+  .el-table__body-wrapper {
+    overflow-y: auto;
+  }
+  tbody {
+    position: relative;
+  }
+}
+</style>

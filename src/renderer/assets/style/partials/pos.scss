@@ -1,0 +1,270 @@
+.pos-container {
+  &.orders-table {
+    .el-table__header-wrapper th {
+      pointer-events: none;
+      color: #fff;
+      background-color: #6dd1cf;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+    }
+      
+    .el-table--border,
+    .el-table--group {
+      border: none;
+    }
+  
+    .el-table td {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.pd-0-dialog {
+  .el-dialog__body {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
+.pt-0-dialog {
+  .el-dialog__body {
+    padding-top: 0 !important;
+  }
+}
+
+.btn-pastal-blue {
+  background-color: #e8fafe;
+  color: #707070;
+  border: none;
+}
+
+.btn-pastal-red {
+  background-color: #f5dfd4;
+  color: #707070;
+  border: none;
+}
+
+.btn-pastal-green {
+  background-color: #e2f5d5;
+  color: #707070;
+  border: none;
+}
+
+.teal-border {
+  .el-input__inner {
+    border: 1px solid #21798d;
+  }
+}
+
+.pastal-blue-border {
+  .el-input__inner {
+    border: 1px solid #E8FAFE;
+  }
+  .el-input-group__append {
+    border: 1px solid #E8FAFE;
+    border-left: 1px solid #E8FAFE !important;
+  }
+}
+
+.names-list {
+  .el-menu {
+    padding-right: 0;
+  }
+  
+  .el-menu-item:focus {
+    background-color: #6DD1CF;
+    color: white;
+  }
+
+  .name-card {
+    height: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+.btn-navy-bordered {
+  border: 1px solid #21798d;
+}
+.navy-color {
+  color: #21798d;
+}
+
+.navy-text-color {
+  .el-input__inner {
+    color: #21798d;
+  }
+}
+
+.icon-search-mod{
+  color: #21798D;
+  margin-top: 13px;
+}
+
+.payment-list {
+  width: 100%;
+  padding-top: 3rem;
+  background-color: #6DD1CF;
+  box-shadow: -7px 0 10px -8px rgba(112, 112, 112, 0.45);
+
+  .el-menu {
+    padding-right: 0;
+    border: none;
+    background-color: #6DD1CF;
+    height: 100%;
+  }
+
+  .el-menu-item {
+    color: white;
+  }
+
+  .is-active {
+    background-color: white;
+    color: #707070;
+  }
+  
+  .el-menu-item:focus {
+    background-color: white;
+    color: #707070;
+  }
+
+  .el-menu-item:hover {
+    color: #707070;
+  }
+
+  .payment-type-card {
+    height: 2.5rem;
+    line-height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.payment-dialog {
+  .el-dialog__body,
+  .el-dialog__header,
+  .el-dialog {
+    padding: 0;
+    border-radius: 0;
+  }
+}
+
+.delivery-type-dialog {
+  .el-dialog__body,
+  .el-dialog__header,
+  .el-dialog {
+    padding: 0;
+    border-radius: 0.5rem;
+  }
+}
+
+.payment-col-2-table {
+  .el-table--border, .el-table--group {
+    border: none;
+  }
+}
+
+.col-1 {
+  border-left: 1px solid rgba(112, 112, 112, 0.45);
+  border-right: 1px solid rgba(112, 112, 112, 0.45);
+}
+
+[dir = 'rtl'] {
+  .bordered-ar {
+    border-left: none;
+    border-right: 0.3rem solid #21798d;
+  }
+}
+
+.bordered-en {
+  border-left: 0.3rem solid #21798d;
+  border-right: none;
+}
+
+.input-radius-15 {
+  .el-input__inner {
+    border-radius: 0.5rem;
+  }
+}
+
+.table-mod {
+  border-radius: 0.5rem !important;
+  box-shadow:0 0 7px rgba(112, 112, 112, 0.45) !important;
+  
+  .el-table {
+    border-radius: 0.5rem !important;
+  }
+}
+
+.radio-mod {
+  .el-radio {
+    margin-right: 0;
+  }
+
+  .el-radio__input.is-checked .el-radio__inner {
+    border-color: #6DD1CF;
+    background: white;
+  }
+  .el-radio__input.is-checked+.el-radio__label {
+    color: #707070;
+  }
+
+  .el-radio__inner::after {
+    width: 9px;
+    height: 9px;
+    background-color: #6DD1CF;
+  }
+
+  .el-radio__label {
+    padding: 0 1rem;
+  }
+
+  .el-radio__input {
+    margin-top: 4px;
+  }
+}
+
+.px-1 {
+  padding: 0 0.5rem;
+}
+
+.pay-btn {
+  color: white;
+  background-color: #6DD1CF;
+  width: 10rem;
+  height: 1.8rem;
+  border-radius: 4px;
+  line-height: 1.8rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.grey-shadow {
+  box-shadow: 0 0 3px rgba(112, 112, 112, 0.45);
+}
+
+.quantity-input {
+  border-radius: 4px;
+  width: 20%;
+  box-shadow:0 0 5px rgba(112, 112, 112, 0.45);
+
+  .el-input__inner {
+    border: none !important;
+  }
+}
+
+.dialog-padding-0-all {
+  .el-dialog__body,
+  .el-dialog__header,
+  .el-dialog {
+    padding: 0;
+  }
+}
+
+.search-icon-container {
+  cursor: pointer; 
+}

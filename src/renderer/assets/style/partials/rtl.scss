@@ -1,0 +1,224 @@
+[dir="rtl"] {
+    input,
+    button,
+    select,
+    textarea,
+    optgroup,
+    div,
+    option,
+    body,
+    nav,
+    span,
+    section,
+    a,
+    li,
+    label,
+    table {
+        font-family: "Tajawal", sans-serif;
+    }
+    .el-date-picker table {
+        direction: rtl;
+        &.el-date-table {
+            font-size: 11px;
+        }
+    }
+    .el-date-picker__header-label {
+        display: inline-block;
+        direction: ltr !important;
+    }
+    .action-buttons-left {
+        float: left;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .action-buttons-right {
+        float: right;
+    }
+    .notes-summary textarea {
+        float: left;
+        @media only screen and (min-width: 768px) {
+            margin-left: 20px;
+        }
+    }
+    .upperNavBar>.float-left {
+        float: left !important;
+    }
+    .float-right {
+        float: right !important;
+    }
+    .el-scrollbar {
+        direction: ltr;
+        .el-scrollbar__wrap {
+            text-align: right;
+        }
+    }
+    .el-input__inner {
+        padding: 0 7px;
+        text-align: right;
+    }
+    .text-center {
+        &~input {
+            text-align: center;
+        }
+    }
+    .el-select {
+        .el-input__inner {
+            padding: 0 7px 0px 2px;
+        }
+    }
+    .number {
+        .el-input__inner {
+            text-align: left !important;
+            direction: ltr;
+        }
+    }
+    .pr-0 {
+        .el-input__inner {
+            padding-right: 2px !important;
+        }
+    }
+    // .editable-table,
+    // .new-record-table {
+    //     .el-input__inner {
+    //         padding: 0 7px !important;
+    //         text-align: right !important;
+    //         &.number {
+    //             text-align: left !important;
+    //             direction: ltr;
+    //         }
+    //     }
+    // }
+    .el-date-editor .el-input__inner {
+        padding-right: 25px;
+        padding-left: 0px;
+    }
+    .el-popconfirm__icon {
+        margin-right: 0;
+        margin-left: 5px;
+    }
+    .el-button+.el-button {
+        margin-left: 2px;
+        // margin-right: 5px;
+    }
+    [class*="el-col-"] {
+        float: right;
+    }
+    .el-popconfirm__action {
+        text-align: left;
+    }
+    .el-popconfirm__main {
+        margin-top: 0.3rem;
+    }
+    .form-item-with-right-label {
+        .el-form-item__label {
+            float: right;
+            text-align: right;
+            padding: 0 0 0 12px;
+            font-size: 12px;
+        }
+    }
+    .el-input--suffix {
+        .el-input__suffix {
+            left: 5px;
+            right: auto !important;
+        }
+        // .el-input__inner {
+        //     padding-right: 15px;
+        //     padding-left: 30px !important;
+        // }
+    }
+    .el-input-group--append {
+        .el-input-group__prepend,
+        .el-input__inner {
+            border-radius: 4px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .el-input-group__append {
+            border-left: 1px solid #dcdfe6;
+            border-right: 0;
+            border-radius: 4px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            .el-select {
+                min-width: 75px;
+            }
+        }
+    }
+    .label-checkbox-padding .el-tree-node__label {
+        padding: 10px;
+        color: #080;
+    }
+    .el-popconfirm__icon {
+        margin-right: 0;
+        margin-left: 5px;
+    }
+    .el-button+.el-button {
+        margin-left: 2px;
+        // margin-right: 5px;
+    }
+    [class*="el-col-"] {
+        float: right;
+    }
+    .el-popconfirm__action {
+        text-align: left;
+    }
+    .el-popconfirm__main {
+        margin-top: 0.3rem;
+    }
+    .form-item-with-right-label {
+        .el-form-item__label {
+            float: right;
+            text-align: right;
+            padding: 0 0 0 12px;
+            font-size: 12px;
+        }
+        .input-margin-bottom {
+            margin-bottom: 12px;
+            text-align: center;
+            width: 100%;
+            [dir="ltr"] & {
+                @media (min-width: 1000px) {
+                    margin-bottom: 12px;
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+        }
+        .el-form-item__content {
+            // margin-right: 100px;
+            margin-left: 0 !important;
+        }
+    }
+    .appended-btn-rtl {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        border-top-left-radius: 0.15rem !important;
+        border-bottom-left-radius: 0.15rem !important;
+    }
+    .d-ltr {
+        direction: ltr;
+    }
+}
+
+// .el-table--striped .el-table__body tr>td {
+//     &>.cell {
+//         padding: 0 5px !important;
+//         .el-input__inner {
+//             padding: 0 5px !important;
+//         }
+//         .el-date-editor .el-input__inner {
+//             padding-left: 25px !important;
+//             padding-right: 0px !important;
+//             [dir="rtl"] & {
+//                 padding-right: 25px !important;
+//                 padding-left: 0px !important;
+//             }
+//         }
+//         .el-checkbox {
+//             margin-right: 0px;
+//         }
+//     }
+// }
+//

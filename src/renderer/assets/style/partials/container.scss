@@ -1,0 +1,237 @@
+.container {
+  background-color: #ffffff;
+  .invoice-form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px;
+    .el-input-group__append {
+      background-color: #fff;
+    }
+    .el-form-item {
+      flex-grow: 1;
+      // margin: 3px;
+      // padding-left: 0.5rem;
+      margin-bottom: 15px;
+      .el-form-item__label {
+        padding: 0 5px 0 0px;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+      }
+      .el-select,
+      .el-input {
+        min-width: 100%;
+        font-size: 13px;
+      }
+    }
+    .inline-button-container {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+  &.invoice-table {
+    box-shadow: 0px 3px 22px -7px rgba(0, 0, 0, 0.4);
+    border-radius: 0 0 1rem 1rem;
+    position: relative;
+    .el-table__header-wrapper th {
+      pointer-events: none;
+      color: #fff;
+      background-color: #21798d;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    &.checked-table {
+      .el-table__header-wrapper th {
+        color: #fff;
+        background-color: #21798d;
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        pointer-events: auto;
+      }
+    }
+    .el-table {
+      border-radius: 0 0 1rem 1rem;
+      .el-dropdown span {
+        color: #fff;
+      }
+    }
+    .el-table--border,
+    .el-table--group {
+      border: none;
+    }
+    .setting-button {
+      cursor: pointer;
+      font-size: 1.3rem;
+    }
+    .el-table td {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+  .input-style {
+    background-color: #feffdc;
+    border: 1px solid #dcdfe6;
+    padding: 5px 30px;
+    margin: 0 10px 5px 10px !important;
+    border-radius: 10%;
+    @media only screen and (max-width: 375px) {
+      // padding-left: 5px;
+      // padding-right: 5px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  .input-style-3 {
+    background-color: white;
+    color: #ff0000;
+    border: 1px solid #dcdfe6;
+    padding: 5px 30px;
+    margin: 0 10px 5px 10px !important;
+    border-radius: 10%;
+    @media only screen and (max-width: 375px) {
+      // padding-left: 5px;
+      // padding-right: 5px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  .input-style-2 {
+    background-color: white;
+    border: 1px solid #dcdfe6;
+    padding: 5px 30px;
+    margin: 0 10px 5px 10px !important;
+    border-radius: 10%;
+    @media only screen and (max-width: 375px) {
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  &.invoice-summary {
+    // min-height: 300px;
+    background-image: linear-gradient(#f3fcfe, #e6f8fc);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.5rem #dddddd;
+    padding-top: 3rem;
+    margin-left: 4rem !important;
+    margin-right: 4rem !important;
+    margin-bottom: 2rem;
+    @media only screen and (max-width: 600px) {
+      margin-left: 2rem !important;
+      margin-right: 2rem !important;
+    }
+    &.ma-2 {
+      margin-left: 3rem !important;
+      margin-right: 3rem !important;
+    }
+    .color-white span {
+      color: #fff !important;
+    }
+    .notes-input textarea {
+      border-radius: 0.4rem;
+      resize: none;
+      @media (max-width: 1200px) {
+        margin-top: 1rem;
+      }
+    }
+    .interval-table {
+      th > .cell {
+        color: #333;
+      }
+    }
+    .action-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 3px;
+      > .el-button {
+        flex-grow: 1;
+        margin: 3px;
+        padding: 10px;
+      }
+    }
+    .action-buttons-nonGrown {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 3px;
+      justify-content: flex-end;
+      margin-right: 1.2rem !important;
+      margin-left: 1.2rem !important;
+      @media only screen and (max-width: 700px) {
+        justify-content: center !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+      }
+      > .el-button {
+        // flex-grow: 1;
+        margin: 3px;
+      }
+      > a {
+        // flex-grow: 1;
+        margin: 3px;
+      }
+      > span {
+        margin: 3px;
+      }
+    }
+    .action-buttons-center {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 3px;
+      justify-content: center;
+      > .el-button {
+        // flex-grow: 1;
+        margin: 3px;
+      }
+    }
+    .expenses-form {
+      .el-input__inner {
+        text-align: center;
+      }
+      .el-form-item__label {
+        width: 100%;
+        text-align: center;
+        padding: 0 !important;
+      }
+    }
+    .totals-form {
+      // @media only screen and (min-width: 1200px) {
+      //   border-left:1px solid rgba(155, 155, 155, 0.4) ;
+      //   padding-left: 6px;
+      // }
+      span {
+        color: rgb(85, 85, 85);
+        font-size: 0.9rem;
+      }
+      .color-white {
+        color: #fff !important;
+      }
+      .el-input__inner {
+        border-width: 0;
+        border: 1px solid #e4e4e4;
+        text-align: center;
+      }
+      .el-input-group__append {
+        border: 1px solid #dddddd;
+      }
+      .total-value .el-input__inner {
+        margin-top: 4px;
+        font-weight: 900;
+        background-color: #2490a9;
+        color: #ffffff;
+      }
+    }
+    .el-col {
+      @media only screen and (max-width: 426px) {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+      }
+    }
+  }
+}
+
+.invoice-summary-top {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}

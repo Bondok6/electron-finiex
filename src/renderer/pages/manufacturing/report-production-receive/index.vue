@@ -1,0 +1,31 @@
+<template>
+  <div class="mb-8">
+    <invoice />
+    <invoice-table />
+    <invoice-summary />
+    <pagination />
+  </div>
+</template>
+
+<script>
+import Pagination from "~/components/static/pagination";
+import Invoice from "~/components/manufacturing/report-production-receive/Invoice";
+import InvoiceTable from "~/components/manufacturing/report-production-receive/InvoiceTable";
+import InvoiceSummary from "~/components/manufacturing/report-production-receive/summary/Summary";
+
+export default {
+  name: "Home",
+  components: {
+    Pagination,
+    Invoice,
+    InvoiceTable,
+    InvoiceSummary,
+  },
+
+  data: function () {
+    return {
+      page: 3,
+    };
+  },
+};
+</script>

@@ -1,0 +1,178 @@
+.el-table__footer-wrapper table.el-table__footer .has-gutter tr td:first-child {
+    background-color: #6dd1cf !important;
+    color: #fff;
+    font-weight: 900;
+}
+
+.el-table__footer-wrapper tbody td,
+.el-table__header-wrapper tbody td {
+    background-color: #feffdc !important;
+}
+
+.el-table__append-wrapper .el-table__header-wrapper {
+    display: none !important;
+}
+
+.summaryTable tr td:first-child {
+    background-color: #6dd1cf !important;
+    color: #fff;
+    font-weight: 900;
+}
+
+.visible-table .el-table__header-wrapper {
+    display: block !important;
+}
+
+.el-table--striped:not(.not-hoverd) .el-table__body tr.el-table__row--striped td {
+    background-color: initial;
+}
+
+.el-table--enable-row-hover:not(.not-hoverd) .el-table__body tr:hover>td {
+    background-color: initial !important;
+}
+
+.el-table--border td,
+.el-table--border th,
+.el-table__body-wrapper .el-table--border.is-scrolling-left~.el-table__fixed {
+    border-right: 1px solid #bebebe;
+}
+
+//editable table
+.editable-table {
+    .el-input__inner {
+        // border: 1px solid transparent;
+        background: transparent;
+        // text-align: center;
+        &:focus {
+            border: 1px solid #409eff;
+        }
+    }
+}
+
+//new record table
+.new-record-table {
+    .el-input__inner {
+        border: 1px solid #c5c5c5;
+        background: transparent;
+        // text-align: center;
+        &:focus {
+            border: 1px solid #409eff;
+        }
+    }
+}
+
+//table with middle summary cells
+.el-table__append-wrapper .middleSummaryCell tr td:first-child {
+    background-color: #fff !important;
+}
+
+.el-table__append-wrapper .middleSummaryCell tr td:nth-child(3) {
+    background-color: #6dd1cf !important;
+    color: #fff;
+    font-weight: 900;
+}
+
+//table with last summary cells
+.el-table__append-wrapper .lastSummaryCell tr td:first-child {
+    background-color: #fff !important;
+}
+
+.el-table__append-wrapper .lastSummaryCell tr td:nth-child(8) {
+    background-color: #6dd1cf !important;
+    color: #fff;
+    font-weight: 900;
+}
+
+.el-table__append-wrapper .sixthSummaryCell tr td:first-child {
+    background-color: #fff !important;
+}
+
+.el-table__append-wrapper .sixthSummaryCell tr td:nth-child(6) {
+    background-color: #21798d !important;
+    color: #fff;
+    font-weight: 900;
+}
+
+.el-table__append-wrapper .fourthSummaryCell tr td:first-child {
+    background-color: #fff !important;
+}
+
+.el-table__append-wrapper .fourthSummaryCell tr td:nth-child(4) {
+    background-color: #6dd1cf !important;
+    color: #fff;
+    font-weight: 900;
+}
+
+//table with fifth Summary Cell
+.el-table__append-wrapper .fifthSummaryCell tr td:first-child {
+    background-color: #fff !important;
+}
+
+.el-table__append-wrapper .fifthSummaryCell tr td:nth-child(5) {
+    background-color: #6dd1cf !important;
+    color: #fff;
+    font-weight: 900;
+}
+
+.el-table__append-wrapper .sixthInfoCell tr td:nth-child(6) {
+    background-color: #feffdc !important;
+    font-weight: 900;
+}
+
+.el-table__append-wrapper .eighthInfoCell tr td:nth-child(8) {
+    background-color: #feffdc !important;
+    font-weight: 900;
+}
+
+.el-table__body .el-table__row .last-cell tr td:nth-child(8) {
+    background-color: #f00;
+}
+
+.visible-table .el-table__row {
+    background-color: #feffdc;
+}
+
+.visible-table thead tr:last-child {
+    visibility: visible;
+}
+
+.el-table__append-wrapper tr:last-child {
+    visibility: hidden;
+    td {
+        padding: 0 !important;
+        .cell {
+            height: 0;
+            margin: 0;
+        }
+    }
+}
+
+.el-table th>.cell {
+    word-break: unset;
+}
+
+.el-table td>.cell {
+    word-break: break-word;
+}
+
+// .invoice-table {
+//     .el-input__inner {
+//         padding-right: 5px !important;
+//     }
+// }
+.pos-resturant-table {
+    .el-table__header-wrapper th {
+        background-color: #6dd1cf !important;
+        color: #fff;
+    }
+}
+
+.editable-table-input {
+    width: auto;
+}
+
+.index {
+    .el-input__inner {
+        padding: 0 !important;
+    }
+}
